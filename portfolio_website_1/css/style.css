@@ -1,0 +1,27 @@
+/*Reset of styles for convention*/
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles for general application */
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color:#333;
+}
+
+/* ===========HEADER=========== */
+.site-header{
+    padding: 10px;
+}
+
+/* TITLE */
+.site-title{
+    text-align: center;
+}
+
+/* NAVBAR */
+
