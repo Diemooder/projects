@@ -14,14 +14,54 @@ body{
 }
 
 /* ===========HEADER=========== */
-.site-header{
-    padding: 10px;
-}
 
 /* TITLE */
 .site-title{
-    text-align: center;
+    text-align: left;
+    font-size: 3rem;
+    margin-left: 1.5rem;
 }
 
 /* NAVBAR */
+.main-nav{
+    display: flex;
+    background-color: #333;
+    height: 50px;
+}
 
+/* LIST */
+.nav-list{
+    display: flex;
+    flex: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* LIST ITEMS */
+.nav-item{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6e6e6;
+    transition: background-color 0.3s;
+}
+
+/* LIST ITEMS LINK */
+.nav-item a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color:#515151;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* LIST ITEMS HOVER */
+.nav-item:hover{
+    background-color: #d6d6d6;
+}
