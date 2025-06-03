@@ -93,13 +93,41 @@ body {
 /* MAIN CONTENT */
 
 /* GENERAL SECTIONS */
+.section{
+  height: var(--section-height);
+}
+
 .split-section{
   display: flex;
   height: var(--section-height);
 }
 
+
 .split-section > *{
   flex:1;
+}
+
+.section-title{
+  font-size: 4rem;
+}
+
+/* GENERAL BUTTONS */
+/* WELCOME BUTTON */
+.button {
+  padding: 12px 24px;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 3px solid var(--color-border);
+  border-radius: 50px;
+  margin-top: 2rem;
+  cursor: pointer;
+  background-color: var(--color-button-bg);
+  color: var(--color-button-text);
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: var(--color-button-hover-bg);
 }
 
 /* WELCOME SECTION */
@@ -120,24 +148,6 @@ body {
   line-height: 1.3;
 }
 
-/* WELCOME BUTTON */
-.welcome-projects-button {
-  padding: 12px 24px;
-  font-size: 2rem;
-  font-weight: bold;
-  border: 3px solid var(--color-border);
-  border-radius: 50px;
-  margin-top: 2rem;
-  cursor: pointer;
-  background-color: var(--color-button-bg);
-  color: var(--color-button-text);
-  transition: background-color 0.3s;
-}
-
-.welcome-projects-button:hover {
-  background-color: var(--color-button-hover-bg);
-}
-
 /* WELCOME IMAGE CONTAINER */
 .welcome-image-container {
   display: flex;
@@ -151,7 +161,7 @@ body {
   height: auto;
 }
 
-/* SEPARATOR LINES COLOR */
+/* SEPARATOR FROM WELCOME TO BRIEF DESCRIPTION */
 
 .custom-shape-divider-bottom-1748854450 {
     position: absolute;
@@ -178,6 +188,7 @@ body {
 
 .brief-description-section{
   background-color: var(--color-accent);
+  position: relative;
 }
 
 .description-text-container{
@@ -185,13 +196,24 @@ body {
   height: 100%;
   flex: .55;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #DDD;
 }
 
 .brief-description{
   width: 90%;
   font-size: 2rem;
-  color: var(--color-button-text);
+  font-weight: bold;
+}
+
+.brief-description-button{
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.brief-description-button:hover{
+  background-color: #DDD;
 }
 
 /* BRIEF DESCRIPTION IMAGE */
@@ -204,4 +226,60 @@ body {
 
 .desc-image{
   max-width: 60%;
+}
+
+/* SECTION DIVIDER BRIEF DESCRIPTION AND PROJECTS */
+.custom-shape-divider-bottom-1748918372 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1748918372 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 30px;
+}
+
+.custom-shape-divider-bottom-1748918372 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* PROJECTS SECTION */
+
+.projects-section{
+  height: 800px;
+}
+
+.projects-title{
+  text-align: center;
+}
+
+.projects-general-description{
+  text-align: center;
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.project-list{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.project-item{
+  flex: .25;
+}
+/* WORKING ON SHADOW OF THE IMAGE */
+.project-item-img{
+  width: 100%;
+  display: block;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 
+              0 3px 6px rgba(0, 0, 0, 0.05);
 }
